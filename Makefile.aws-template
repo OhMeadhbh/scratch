@@ -1,0 +1,13 @@
+# Makefile.aws-template
+#
+# If you rename this file to Makefile.aws and fill in the
+# variables below, the main makefile will pick them up
+# automagically. It's probably bad form to check this
+# back into the repo.
+
+STAGENAME?=Dev
+STACKNAME?=Scratch
+S3BUCKET=S3_Bucket_Goes_Here
+S3PREFIX=scratch
+REGION=us-east-1
+CAPABILITIES=CAPABILITY_IAM

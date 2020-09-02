@@ -1,0 +1,4 @@
+Makefile.aws
+package-lock.json
+.aws-sam
+node-modules

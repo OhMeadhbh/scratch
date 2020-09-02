@@ -1,0 +1,19 @@
+{
+  "name": "scratch",
+  "version": "1.0.0",
+  "description": "Example project to demonstrate the use of SAM, API Gateway, Lambda, S3 and DynamoDB",
+  "main": "app/index.js",
+  "scripts": {
+    "test": "mocha test/unit/"
+  },
+  "keywords": [
+    "aws",
+    "example"
+  ],
+  "author": "OhMeadhbh@gmail.com",
+  "license": "BSD-3-Clause",
+  "defDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^8.1.3"
+  }
+}
