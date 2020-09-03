@@ -12,19 +12,20 @@ https://meadhbh.hamrick.rocks/ )
 The basic information flow is simple:
 
    
-    +-------------+      +-------------+      +-------------+      +-------------+
-    |     Web     |      |             |      |             |      |             |
-    |    Client   | <--> | API Gateway | <--> |  AWS Lambda | <--> |   DynamoDB  |
-    |  (Browser)  |      |             |      |             |      |             |
-    +-------------+      +-------------+      +-------------+      +-------------+
-                                |                    |                    |
-                                |                    v                    |
-                                |             +-------------+             |
-                                |             |             |             |
-                                +-----------> | Log Manager | <-----------+
-                                              |             |
-                                              +-------------+
-   
+      +-------------+      +-------------+      +-------------+      +-------------+
+      |     Web     | ---> |             | ---> |             | ---> |             |
+      |    Client   |      | API Gateway |      |  AWS Lambda |      |   DynamoDB  |
+      |  (Browser)  | <--- |             | <--- |             | <--- |             |
+      +-------------+      +-------------+      +-------------+      +-------------+
+                                  |                    |                    |
+                                  |                    v                    |
+                                  |             +-------------+             |
+                                  |             |             |             |
+                                  +-----------> | Log Manager | <-----------+
+                                                |             |
+                                                +-------------+
+      
+      Diagram I : Basic Information Flow
 
 1. The client (web browser) makes a request to the back
    end.
